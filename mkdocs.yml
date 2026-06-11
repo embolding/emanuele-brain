@@ -1,0 +1,43 @@
+site_name: Emanuele Brain
+site_description: Knowledge base personale
+site_url: https://embolding.github.io/emanuele-brain
+repo_url: https://github.com/embolding/emanuele-brain
+
+theme:
+  name: material
+  language: it
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Conversazioni: conversazioni/index.md
+  - Progetti: progetti/index.md
+  - Guide: guide/index.md
+  - Note: note/index.md
+
+plugins:
+  - search:
+      lang: it
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
